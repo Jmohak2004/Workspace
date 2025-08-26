@@ -1,0 +1,1 @@
+use newsorg api for fetching news from the us , make it 
