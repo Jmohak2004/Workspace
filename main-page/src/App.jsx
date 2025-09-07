@@ -4,15 +4,15 @@ import './App.css';
 function App() {
   const apps = [
     { id: 'bot', name: 'Bot', icon: '🤖' ,link : 'https://chatbot-fhi84rm47-mohakj-somaiyaedus-projects.vercel.app/'},
-    { id: 'chat', name: 'Chat', icon: '💬' , link:'https://google.com'},
-    { id: 'chess', name: 'Chess', icon: '♟️' ,link:'https://google.com'},
-    { id: 'conversion', name: 'Conversion', icon: '🔄',link:'https://google.com' },
-    { id: 'drive', name: 'Drive', icon: '📂' ,link:'https://google.com'},
-    { id: 'maps', name: 'Maps', icon: '🗺️',link:'https://google.com' },
-    { id: 'meet', name: 'Meet', icon: '📹',link:'https://google.com' },
-    { id: 'news', name: 'News', icon: '📰' ,link:'https://google.com'},
-    { id: 'stream', name: 'Stream', icon: '📺',link:'https://google.com' },
-    { id: 'translate', name: 'Translate', icon: '🌐' ,link:'https://google.com'}
+    { id: 'chat', name: 'Chat', icon: '💬' , link:'https://google.com'},//1
+    { id: 'chess', name: 'Chess', icon: '♟️' ,link:'https://workspace-sel3.vercel.app'},
+    { id: 'conversion', name: 'Conversion', icon: '🔄',link:'https://currency-converter-hazel-two.vercel.app/' },
+    { id: 'drive', name: 'Drive', icon: '📂' ,link:'https://google.com'}, //2
+    { id: 'maps', name: 'Maps', icon: '🗺️',link:'https://google.com' }, 
+    { id: 'meet', name: 'Meet', icon: '📹',link:'https://google.com' }, //3
+    { id: 'news', name: 'News', icon: '📰' ,link:'https://workplace-news.vercel.app/'},
+    { id: 'voting', name: 'Voting', icon: '📺',link:'https://workspace-5275.vercel.app' },
+    { id: 'translate', name: 'Translate', icon: '🌐' ,link:'https://workspace-4oqc.vercel.app'}
   ];
 
   return (
