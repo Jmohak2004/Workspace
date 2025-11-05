@@ -9,7 +9,7 @@ function App() {
     { id: 'conversion', name: 'Conversion', icon: '🔄',link:'https://currency-converter-hazel-two.vercel.app/' },
     // { id: 'drive', name: 'Drive', icon: '📂' ,link:'https://google.com'}, //2
     // { id: 'maps', name: 'Maps', icon: '🗺️',link:'https://google.com' }, 
-    { id: 'meet', name: 'Meet', icon: '📹',link:'https://google.com' }, //3
+    { id: 'cab', name: 'Cab', icon: "🚗" ,link:'https://cab-nine.vercel.app/' }, //3
     { id: 'news', name: 'News', icon: '📰' ,link:'https://workplace-news.vercel.app/'},
     { id: 'voting', name: 'Voting', icon: '📺',link:'https://workspace-5275.vercel.app' },
     { id: 'translate', name: 'Translate', icon: '🌐' ,link:'https://workspace-4oqc.vercel.app'}
