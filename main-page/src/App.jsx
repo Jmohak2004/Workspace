@@ -4,11 +4,11 @@ import './App.css';
 function App() {
   const apps = [
     { id: 'bot', name: 'Bot', icon: '🤖' ,link : 'https://chatbot-fhi84rm47-mohakj-somaiyaedus-projects.vercel.app/'},
-    { id: 'chat', name: 'Chat', icon: '💬' , link:'https://google.com'},//1
+    { id: 'chat', name: 'Chat', icon: '💬' , link:'https://chat-app-ruddy-six-38.vercel.app/'},//1
     { id: 'chess', name: 'Chess', icon: '♟️' ,link:'https://workspace-sel3.vercel.app'},
     { id: 'conversion', name: 'Conversion', icon: '🔄',link:'https://currency-converter-hazel-two.vercel.app/' },
-    { id: 'drive', name: 'Drive', icon: '📂' ,link:'https://google.com'}, //2
-    { id: 'maps', name: 'Maps', icon: '🗺️',link:'https://google.com' }, 
+    // { id: 'drive', name: 'Drive', icon: '📂' ,link:'https://google.com'}, //2
+    // { id: 'maps', name: 'Maps', icon: '🗺️',link:'https://google.com' }, 
     { id: 'meet', name: 'Meet', icon: '📹',link:'https://google.com' }, //3
     { id: 'news', name: 'News', icon: '📰' ,link:'https://workplace-news.vercel.app/'},
     { id: 'voting', name: 'Voting', icon: '📺',link:'https://workspace-5275.vercel.app' },
