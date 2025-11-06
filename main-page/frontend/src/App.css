@@ -1,0 +1,194 @@
+/* --- Global & Base Styles --- */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+  background-color: #01050c; /* Light gray background */
+  color: #333;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* --- Login Page Styles --- */
+/* (Replaces your inline 'styles' object) */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+.login-container h2 {
+  color: #1c1c1e;
+  margin-bottom: 24px;
+}
+
+.login-input {
+  width: 100%;
+  max-width: 300px;
+  padding: 12px 15px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.login-input:focus {
+  outline: none;
+  border-color: #007aff; /* Blue focus color */
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.2);
+}
+
+.login-btn {
+  width: 100%;
+  max-width: 300px;
+  padding: 12px 20px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 8px;
+  background-color: #007aff;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.login-btn:hover {
+  background-color: #005ecb;
+}
+
+.login-btn:disabled {
+  background-color: #aeb8c2;
+  cursor: not-allowed;
+}
+
+/* --- Dashboard Styles --- */
+.app-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 24px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* --- Header --- */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 24px;
+}
+
+.header h2 {
+  margin: 0;
+  color: #1c1c1e;
+}
+
+/* (Replaces your inline style on the button) */
+.logout-btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  background-color: #f44336; /* Red */
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.logout-btn:hover {
+  background-color: #d32f2f;
+}
+
+/* --- Apps Grid --- */
+.apps-grid {
+  display: grid;
+  /* This creates a responsive grid.
+    - auto-fit: Fills the row with as many columns as possible.
+    - minmax: Each column will be at least 140px wide, but
+              will stretch (1fr) to fill any remaining space.
+  */
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 20px;
+}
+
+.app-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #f0f0f0;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.app-link:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+}
+
+.icon {
+  font-size: 3rem; /* Larger emoji */
+  margin-bottom: 12px;
+}
+
+.app-name a {
+  text-decoration: none;
+  color: #007aff;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.app-name a:hover {
+  text-decoration: underline;
+}
+
+/* --- Footer Text --- */
+.text {
+  text-align: center;
+  margin-top: 30px;
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
+/* --- Responsive Media Query --- */
+@media (max-width: 600px) {
+  .app-container {
+    margin: 20px;
+    padding: 16px;
+  }
+
+  .header {
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+  }
+
+  /* On small screens, force 2 columns for a cleaner look */
+  .apps-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .app-link {
+    padding: 16px;
+  }
+
+  .icon {
+    font-size: 2.5rem;
+  }
+}
