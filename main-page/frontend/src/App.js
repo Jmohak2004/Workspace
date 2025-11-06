@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./App.css";
-
+// https://workspace-gilt-kappa.vercel.app/
 function App() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -18,7 +18,7 @@ function App() {
     { id: "news", name: "News", icon: "📰", link: "https://workplace-news.vercel.app/" },
     { id: "voting", name: "Voting", icon: "📺", link: "https://workspace-5275.vercel.app" },
     { id: "translate", name: "Translate", icon: "🌐", link: "https://workspace-4oqc.vercel.app" },
-    { id: "codereviewer", name: "Code Reviewer", icon: "🧑🏻‍💻", link: "https://workspace-4oqc.vercel.app" },
+    { id: "codereviewer", name: "Code Reviewer", icon: "🧑🏻‍💻", link: "https://workspace-gilt-kappa.vercel.app/" },
   ];
 
   const handleLogin = async () => {
