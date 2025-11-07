@@ -28,7 +28,7 @@ function App() {
     }
     setLoading(true);
     try {
-      const res = await fetch("http://localhost:5050/users", {
+      const res = await fetch("https://workspace-2tbd.onrender.com/users", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ name, email }),
